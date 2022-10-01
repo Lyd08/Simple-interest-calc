@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Simple Interest calculator
+    </title>
+    
+</head>
+
+<body>
+    
+<div style="background-color:#757081" >
+    <center>
+        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; font-size: 4.5rem";>SIMPLE INTEREST CALCULATOR</h2><br>
+    
+    
+
+    
+
+    <div style="font-size: 2rem;">
+    <label for="A">Principal Amount</label><br>
+    <input Type="number" name="" id="A"><br>
+    <label for="A">Rate of Interest</label><br>
+    <input Type="number" name="" id="B"><br>
+    <label for="A">Years</label><br>
+    <input Type="number" name="" id="C"><br>
+    <br>
+    <button style="font-size: 2rem; background-color:#3b334e; border-color: black" onclick="SIcalc()">Calculate</button> <br>
+
+    <p id="answer"></p>
+</div>
+</center>
+ </div>
+   
+    <script src="script.js"></script>
+    <script>
+        function SIcalc(){
+            var a = document.getElementById("A").value;
+            var b = document.getElementById("B").value;
+            var c = document.getElementById("C").value;
+            console.log((Number(a)*Number(b)*Number(c))/100);
+            ans= (Number(a)*Number(b)*Number(c))/100;
+            document.getElementById("answer").innerHTML = "The Simple Interest is Rs." + ans;
+        }
+    </script>
+    
+</body>
+</html>
+</body>
